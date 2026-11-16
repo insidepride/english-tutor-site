@@ -233,11 +233,32 @@
       .lead { font-size: 1.04rem; }
       .hero-actions { align-items: stretch; flex-direction: column; }
       .hero-actions .button { width: 100%; }
-      .portrait-wrap { width: min(74vw, 320px); margin-inline: auto; }
-      .portrait-frame { aspect-ratio: .72; border-width: 6px; }
-      .portrait-frame img { object-position: 50% 24%; }
-      .about-image { width: min(76vw, 330px); margin: 0 auto 34px; }
-      .about-image img { aspect-ratio: .72; object-position: 50% 23%; }
+      .portrait-wrap { width: min(88vw, 360px); margin: 12px auto 0; }
+      .portrait-frame {
+        width: 100%;
+        height: min(82vw, 320px);
+        min-height: 260px;
+        aspect-ratio: auto;
+        border-width: 6px;
+        border-radius: 34px 64px 30px 46px;
+      }
+      .portrait-frame img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 30%;
+      }
+      .about-image { width: min(88vw, 360px); margin: 0 auto 34px; }
+      .about-image img {
+        display: block;
+        width: 100%;
+        height: min(82vw, 320px);
+        min-height: 260px;
+        aspect-ratio: auto;
+        object-fit: cover;
+        object-position: 50% 30%;
+      }
       .lesson-card { left: -8px; bottom: 15px; width: 210px; padding: 16px; }
       .round-word { right: -6px; top: 7%; width: 82px; height: 82px; font-size: .62rem; }
       .speech-bubble { font-size: .84rem; padding: 8px 11px; }
